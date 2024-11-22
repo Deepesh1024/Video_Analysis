@@ -4,7 +4,7 @@ streamlit
 moviepy==1.0.3
 reportlab
 mediapipe 
-ffmpeg
+ffmpeg-python
 opencv-python-headless
 tensorflow
 tensorflow_hub 
