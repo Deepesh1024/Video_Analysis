@@ -6,7 +6,7 @@ reportlab
 mediapipe 
 ffmpeg-python
 numpy
-opencv-python-python
+opencv-python-headless
 tensorflow
 tensorflow_hub 
 langchain_groq
