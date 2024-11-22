@@ -50,8 +50,8 @@ class PDFReportGenerator:
         elements.append(Spacer(1, 12))
 
         # Add Posture and Eye Contact Score
-        posture_text = f"<b>Posture Score: {data['Posture']}</b>"
-        eye_text = f"<b>Eye Contact Score: {data['Eye']}</b>"
+        posture_text = f"<b>Posture Score: {data['posture']}</b>"
+        eye_text = f"<b>Eye Contact Score: {data['Eye Contact']}</b>"
         elements.append(Paragraph(posture_text, styles['Normal']))
         elements.append(Paragraph(eye_text, styles['Normal']))
         elements.append(Spacer(1, 12))

@@ -1,18 +1,30 @@
 import streamlit as st
+print("Done1")
 import os
-from VideoTranscriber import VideoTranscriber
+print("Done1")
+from newtranscriber import VideoTranscriber
+print("Done1")
 import json
+print("Done1")
 from ResumeEvaluator import VideoResumeEvaluator
-from trialposture import VideoAnalyzer
+print("Done1")
+# from trialposture import VideoAnalyzer
+from groqvision2 import VideoAnalyzer
+print("Done1")
 from newpdfgen import PDFReportGenerator
+print("Done1")
+
+
+
+
+    
 def process_video(video_file):
     st.video(video_file)
-def process_video(video_file):
     output_audio_path = "audiofile.wav"
     output_json_path = "transcription_output.json"
     
     st.write("Transcribing the video...")
-    transcriber = VideoTranscriber(video_file.name, output_audio_path, output_json_path)
+    transcriber = VideoTranscriber(video_file, output_audio_path, output_json_path)
     data = transcriber.transcribe()
     return data
     
@@ -23,8 +35,8 @@ def main():
     
     if uploaded_video is not None:
         st.write("Extracting Video Data")
-        analyzer = VideoAnalyzer(r"C:\Users\ayush\RE-LLM\myenv\23129_IraSinghal.mp4")
-        analyzer.analyze()
+        analyzer = VideoAnalyzer(uploaded_video)
+        analyzer.analyze_video()
         st.write("Video Extraction Done")
         st.write("Transcription Started")
         transcription_output = process_video(uploaded_video)
@@ -32,22 +44,26 @@ def main():
         
         output = evaluator.evaluate_transcription(transcription_output)
         try:
-            with open(r"C:\Users\ayush\RE-LLM\myenv\output.json", "r") as f:
+            with open(r"transcription_output.json", "r") as f:
                 data = json.load(f)
-        except FileNotFoundError:
-            data = []
-        data["LLM"] = output
+        except Exception as e:
+            raise e
+        
+        with open(r"output.json", 'r', encoding='utf-8') as json_file:
+            data = json.load(json_file)
+        
+        data['LLM'] = output
 
-        with open(r"C:\Users\ayush\RE-LLM\myenv\output.json", 'w', encoding='utf-8') as json_file:
+        with open(r"output.json", 'w', encoding='utf-8') as json_file:
             json.dump(data, json_file, ensure_ascii=False, indent=4)
             print("Dumping Done")
         print("LLM Output inserted")
         st.write("Generating PDF")
-        json_path = r"C:\Users\ayush\RE-LLM\myenv\output.json"
+        json_path = r"output.json"
         pdf_path = "evaluation_report.pdf"
         pdf_generator = PDFReportGenerator(json_path, pdf_path)
         pdf_generator.create_pdf()
-        with open(r"C:\Users\ayush\RE-LLM\myenv\evaluation_report.pdf", "rb") as pdf_file:
+        with open(r"evaluation_report.pdf", "rb") as pdf_file:
             st.download_button(
                 label="Download PDF Report",
                 data=pdf_file,

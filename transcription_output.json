@@ -1,107 +1,52 @@
 [
     {
         "start": 0.0,
-        "end": 7.0,
-        "text": " Hello, my name is Eira Singhal and I'm currently pursuing MPEG in CDS at ISC Bandler and here"
+        "end": 8.6,
+        "text": " Hello there, my name is Sheikh Shamsuddin and I am from Hyderabad, presently pursuing my Bachelor of Technology in Mechanical Engineering"
     },
     {
-        "start": 7.0,
-        "end": 11.0,
-        "text": " I am playing for the role of data scientist at Amazon."
+        "start": 8.6,
+        "end": 16.3,
+        "text": " Stream from Guru Nanak Institution's Technical Campus. Coming to my grade points out of 8 semesters, I have appeared for 5 semesters,"
     },
     {
-        "start": 11.0,
-        "end": 18.0,
-        "text": " So to answer the question that why am I a good fit for the role is because I have expertise"
-    },
-    {
-        "start": 18.0,
-        "end": 20.0,
-        "text": " in ML and data science fields."
-    },
-    {
-        "start": 20.0,
-        "end": 25.0,
-        "text": " I've completed several projects ranging from computer vision to NLP to time series analysis"
-    },
-    {
-        "start": 25.0,
+        "start": 16.3,
         "end": 28.0,
-        "text": " over the course of past one year."
+        "text": " which makes my average grade points 8.0 CGP. I had done my summer internship on steady on EP break systems at South Central Railway Carriage Workshop, Lala Guda."
     },
     {
         "start": 28.0,
-        "end": 33.0,
-        "text": " And also I've covered several courses related to deep learning and computer vision."
+        "end": 36.0,
+        "text": " Coming to my skills, being a mechanical engineering, I have learnt some basic skills like designing in AutoCAD and CatEye."
     },
     {
-        "start": 33.0,
-        "end": 40.0,
-        "text": " And my final year project also relates to computer vision and deep learning field which is AI based"
+        "start": 36.0,
+        "end": 43.5,
+        "text": " Apart from mechanical skills, I have also learnt some programming languages like C. Throughout my college, not only I have good grades,"
     },
     {
-        "start": 40.0,
-        "end": 45.0,
-        "text": " localization and classification of skin diseases with focus on explainable AI."
+        "start": 43.5,
+        "end": 51.0,
+        "text": " but I was also involved in extracurricular activities and I was awarded as best class representative in my BTEC first year."
     },
     {
-        "start": 48.0,
-        "end": 50.0,
-        "text": " Strings are concerned."
+        "start": 51.0,
+        "end": 59.0,
+        "text": " Currently, I am involved in a mini project and my project title is Railway Track Cleaning Robot."
     },
     {
-        "start": 50.0,
-        "end": 56.0,
-        "text": " I have a very strong coding background and since my project deals with deep learning and computer vision"
+        "start": 59.0,
+        "end": 66.0,
+        "text": " I want to join your company because I feel this company will provide me an excellent opportunity to learn and grow."
     },
     {
-        "start": 56.0,
-        "end": 62.0,
-        "text": " I'm very well aware of tools like NumPy, Pandas, Scalearn, PyTorch, TensorFlow etc."
+        "start": 66.0,
+        "end": 74.0,
+        "text": " I assure you, if given a chance, I will give my 100% to your company and I will prove a great asset to your organization."
     },
     {
-        "start": 62.0,
-        "end": 65.0,
-        "text": " to deal with them on a daily basis."
-    },
-    {
-        "start": 65.0,
-        "end": 76.0,
-        "text": " And considering my strengths, I think I can really work with people as a team and work very nicely"
-    },
-    {
-        "start": 76.0,
-        "end": 78.0,
-        "text": " and also I'm a good listener."
-    },
-    {
-        "start": 79.0,
-        "end": 88.0,
-        "text": " Talking about my weaknesses, I think I'm very scared of clowns in general and it all started"
-    },
-    {
-        "start": 88.0,
-        "end": 95.0,
-        "text": " with a movie called 8-Witch had a very scary clown as a ghost which was named Pennywise."
-    },
-    {
-        "start": 95.0,
-        "end": 103.0,
-        "text": " Coming to the question of where do I see myself in 5-10 years is I just want to lead a happy"
-    },
-    {
-        "start": 103.0,
-        "end": 110.0,
-        "text": " and healthy life so wherever I am at that point of whichever place I'm working at I just want to be happy"
-    },
-    {
-        "start": 110.0,
-        "end": 112.0,
-        "text": " and content with code I have."
-    },
-    {
-        "start": 112.0,
-        "end": 113.0,
-        "text": " Thank you."
+        "start": 74.0,
+        "end": 79.0,
+        "text": " If you would like to know more about me, I will be waiting to hear from you. Thank you."
     }
 ]

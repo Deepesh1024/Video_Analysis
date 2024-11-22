@@ -1,5 +1,4 @@
 {
-    "Eye": "Good",
-    "Posture": "Excellent",
-    "LLM": "These are the answers:\n\n1. Yes\n2. Excellent\n3. Good\n4. Poor\n5. Satisfactory\n6. The speech had a loose structure, but it did follow an introductory-body-conclusion format to some extent.\n7. The research quality is questionable as there is no specific mention of sources or depth of knowledge on the topic, but Eira does show familiarity with relevant tools and concepts in ML and data science fields.\n8. While Eira's passion for her work and confidence shine through, I'm not entirely convinced by her overall speech. She has some great strengths to bring to the role, but her weakness discussion feels somewhat unusual and unrelated to the job itself."
+    "posture": 3,
+    "Eye Contact": 3
 }
