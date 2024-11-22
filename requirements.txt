@@ -10,3 +10,4 @@ tensorflow
 tensorflow_hub 
 langchain_groq
 reportlab
+openai-whisper
