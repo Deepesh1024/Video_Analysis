@@ -1,52 +1,222 @@
 [
     {
         "start": 0.0,
-        "end": 8.6,
-        "text": " Hello there, my name is Sheikh Shamsuddin and I am from Hyderabad, presently pursuing my Bachelor of Technology in Mechanical Engineering"
+        "end": 4.0,
+        "text": " Dear Ma'am, Sir, Thank you so much for having me here."
     },
     {
-        "start": 8.6,
-        "end": 16.3,
-        "text": " Stream from Guru Nanak Institution's Technical Campus. Coming to my grade points out of 8 semesters, I have appeared for 5 semesters,"
+        "start": 4.0,
+        "end": 9.0,
+        "text": " I am Dhruv Gupta and I wish to apply into NTUS, PhD program for biomedical devices."
     },
     {
-        "start": 16.3,
-        "end": 28.0,
-        "text": " which makes my average grade points 8.0 CGP. I had done my summer internship on steady on EP break systems at South Central Railway Carriage Workshop, Lala Guda."
+        "start": 9.0,
+        "end": 12.0,
+        "text": " I will begin with my academic journey."
     },
     {
-        "start": 28.0,
-        "end": 36.0,
-        "text": " Coming to my skills, being a mechanical engineering, I have learnt some basic skills like designing in AutoCAD and CatEye."
+        "start": 12.0,
+        "end": 18.0,
+        "text": " My academic journey has been deeply rooted in exploring the intersection of engineering and health sector."
     },
     {
-        "start": 36.0,
-        "end": 43.5,
-        "text": " Apart from mechanical skills, I have also learnt some programming languages like C. Throughout my college, not only I have good grades,"
+        "start": 18.0,
+        "end": 24.0,
+        "text": " I am pursuing a Bachelor of Science in Biology in the Indian Institute of Science, my beloved."
     },
     {
-        "start": 43.5,
-        "end": 51.0,
-        "text": " but I was also involved in extracurricular activities and I was awarded as best class representative in my BTEC first year."
+        "start": 24.0,
+        "end": 31.0,
+        "text": " And I have consistently sought to blend learnings from biology and physiology with the passion for engineering and robotics."
     },
     {
-        "start": 51.0,
+        "start": 31.0,
+        "end": 41.0,
+        "text": " During my time at IISC, I have taken courses in both these areas of interest and subjects which I have bridged it to."
+    },
+    {
+        "start": 41.0,
+        "end": 45.0,
+        "text": " So for device making I have taken courses in operating systems and embedded systems."
+    },
+    {
+        "start": 45.0,
+        "end": 50.0,
+        "text": " For biology I have taken courses in human physiology, medical neuroscience and neurobiology labs."
+    },
+    {
+        "start": 50.0,
         "end": 59.0,
-        "text": " Currently, I am involved in a mini project and my project title is Railway Track Cleaning Robot."
+        "text": " And as combinational courses I have taken product manufacturing via medical devices, diagnostics and devices including neuroimaging."
     },
     {
         "start": 59.0,
-        "end": 66.0,
-        "text": " I want to join your company because I feel this company will provide me an excellent opportunity to learn and grow."
+        "end": 65.0,
+        "text": " My interest in the health sector, we have gradually over a period of 3 years."
     },
     {
-        "start": 66.0,
-        "end": 74.0,
-        "text": " I assure you, if given a chance, I will give my 100% to your company and I will prove a great asset to your organization."
+        "start": 65.0,
+        "end": 73.0,
+        "text": " I in fact first got to know of the term medtech through an Estonian career accelerator which I joined remotely in my first semester at IISC."
     },
     {
-        "start": 74.0,
-        "end": 79.0,
-        "text": " If you would like to know more about me, I will be waiting to hear from you. Thank you."
+        "start": 73.0,
+        "end": 84.0,
+        "text": " I kept the concept in the term medtech in mind when I applied for a medical observation at AIMS Delhi under the mentorship of Karnulal Dr. P.K. Sadhi,"
+    },
+    {
+        "start": 84.0,
+        "end": 88.0,
+        "text": " former Neurologist to President MP J. Abdul Kalam."
+    },
+    {
+        "start": 88.0,
+        "end": 96.0,
+        "text": " After acceptance I was encouraged to record high frequency problems happening at the hospital faced by patients."
+    },
+    {
+        "start": 96.0,
+        "end": 99.0,
+        "text": " Hospital acquired infections made it to the top of the list."
+    },
+    {
+        "start": 100.0,
+        "end": 109.0,
+        "text": " At the time I was also interested in Nanda Parashat and that led me to found my startup Viroak with 3 co-founders and a team of 6."
+    },
+    {
+        "start": 109.0,
+        "end": 114.0,
+        "text": " We received a seed funding of 10 lakhs of 1 million Indian rupees."
+    },
+    {
+        "start": 114.0,
+        "end": 119.0,
+        "text": " We are currently building an MVP, a minimal viable product."
+    },
+    {
+        "start": 119.0,
+        "end": 128.0,
+        "text": " I have submitted patents for 3 devices and are expecting to reduce the cost of our product."
+    },
+    {
+        "start": 128.0,
+        "end": 142.0,
+        "text": " After Viroak, me and part of my team decided to apply to the Indian Ministry of Defence for a summer project for helping soldiers with spinal cord injuries"
+    },
+    {
+        "start": 142.0,
+        "end": 145.0,
+        "text": " and rehabilitated them using a robotic gate-trainer."
+    },
+    {
+        "start": 145.0,
+        "end": 148.0,
+        "text": " I designed and was approved by the Indian Chief of Army."
+    },
+    {
+        "start": 150.0,
+        "end": 158.0,
+        "text": " Apart from my work has been facilitated by the entrepreneurship set of IISC and IEEE IISC."
+    },
+    {
+        "start": 158.0,
+        "end": 168.0,
+        "text": " As of February 2024, I am the student chair of CS Society of IEEE and Vice President of the entrepreneurship set of IISC."
+    },
+    {
+        "start": 169.0,
+        "end": 172.0,
+        "text": " Leaning a team is mostly logistics."
+    },
+    {
+        "start": 172.0,
+        "end": 180.0,
+        "text": " I sometimes prefer roles which allow me to focus on my developing and defining my skill set or sometimes a challenge."
+    },
+    {
+        "start": 180.0,
+        "end": 187.0,
+        "text": " I am participating in a competition by IISRO."
+    },
+    {
+        "start": 187.0,
+        "end": 197.0,
+        "text": " It is a minimal viable competition which our team has cleared the first few rounds of and have received funding of 25 lakh rupees"
+    },
+    {
+        "start": 197.0,
+        "end": 201.0,
+        "text": " or 2.5 million in need of rupees to further our project."
+    },
+    {
+        "start": 204.0,
+        "end": 212.0,
+        "text": " Looking ahead, my goal is to continue leveraging my engineering acumen to drive effective and efficient solutions in the health tech sector."
+    },
+    {
+        "start": 212.0,
+        "end": 225.0,
+        "text": " My core strengths are leadership, innovation and a unique skill set of robotics, metric devices and background in biology"
+    },
+    {
+        "start": 225.0,
+        "end": 228.0,
+        "text": " combined with acute market awareness."
+    },
+    {
+        "start": 230.0,
+        "end": 233.0,
+        "text": " I also wish to communicate that my personal mission is innovation of social impact."
+    },
+    {
+        "start": 233.0,
+        "end": 235.0,
+        "text": " I want to help people with what I learned."
+    },
+    {
+        "start": 235.0,
+        "end": 242.0,
+        "text": " Hence, I always seek to understand the application and implementation strategy of any idea first."
+    },
+    {
+        "start": 244.0,
+        "end": 250.0,
+        "text": " Me, an MSCist, founded an NGO, Devi Falhar, to distribute menstrual pads to slums in our city."
+    },
+    {
+        "start": 250.0,
+        "end": 257.0,
+        "text": " We soon figured out that it was not access to pads but rather perception of periods by the men in the house which is the main problem."
+    },
+    {
+        "start": 257.0,
+        "end": 262.0,
+        "text": " And we switched to teaching young boys in the slum about period pain and menstrual health."
+    },
+    {
+        "start": 262.0,
+        "end": 266.0,
+        "text": " We have some of the huge change there after in the feedback that we received from the women in the slums."
+    },
+    {
+        "start": 266.0,
+        "end": 276.0,
+        "text": " So, I would be most happy to work with projects where I get to work with people and understand why they are using my project and what they really, really need."
+    },
+    {
+        "start": 277.0,
+        "end": 281.0,
+        "text": " Thank you so much for considering my application. It's an honor to be here."
+    },
+    {
+        "start": 281.0,
+        "end": 287.0,
+        "text": " I'm eager to bring my perspective and skill set to NTU, Singapore and contribute to the estimated situation."
+    },
+    {
+        "start": 287.0,
+        "end": 295.0,
+        "text": " I look forward to the opportunity to discuss how my background, skills and enthusiasm align with your PhD program. Thank you."
     }
 ]
