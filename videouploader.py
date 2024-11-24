@@ -150,5 +150,6 @@ def main():
     else:
         st.info("👆 Please upload a video file to start the analysis process.")
 
+
 if __name__ == "__main__":
     main()
