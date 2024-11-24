@@ -1,16 +1,17 @@
 import io
+import os
 import tempfile
 import moviepy.editor as mp
-import whisper
 import json
 import streamlit as st
+from groq import Groq
 
 class VideoTranscriber:
     def __init__(self, video_file, output_audio_path, output_json_path):
         self.video_file = video_file  # Video file uploaded in memory
         self.output_audio_path = output_audio_path
         self.output_json_path = output_json_path
-        self.model = whisper.load_model("small")
+        self.client = Groq(api_key = "sk_nhY0hl4F9nM0bYTZoUwPWGdyb3FYOIZxWE3kqDKrf3nnJ1YjDgzw")
 
     def extract_audio(self):
         """Extract audio from video file and save it."""
@@ -25,12 +26,22 @@ class VideoTranscriber:
         audio.write_audiofile(self.output_audio_path)
 
     def transcribe(self):
-        """Transcribe audio and save the results to the JSON file."""
+        """Transcribe audio using Groq API and save the results to the JSON file."""
         self.extract_audio()  # Extract audio before transcribing
-        results = self.model.transcribe(self.output_audio_path, verbose=True)
+
+        # Read the audio file and prepare for transcription
+        with open(self.output_audio_path, "rb") as audio_file:
+            transcription = self.client.audio.transcriptions.create(
+                file=(self.output_audio_path, audio_file.read()),
+                model="whisper-large-v3-turbo",
+                language="en",
+                response_format="verbose_json",
+            )
+
+        # Parse and save the transcription results
         transcription_output = []
         data = ""
-        for segment in results['segments']:
+        for segment in transcription.get("segments", []):
             start = segment['start']
             end = segment['end']
             text = segment['text']
@@ -53,11 +64,11 @@ class VideoTranscriber:
         print(f"Transcription results saved to {self.output_json_path}")
         return data
 
-# # Streamlit UI to upload video file
-# uploaded_video = st.file_uploader("Choose a video...", type=["mp4", "mov", "avi", "mkv"])
+# Streamlit UI to upload video file
+uploaded_video = st.file_uploader("Choose a video...", type=["mp4", "mov", "avi", "mkv"])
 
-# if uploaded_video is not None:
-#     st.write("Transcribing Video...")
-#     # Initialize the transcriber with the uploaded video file
-#     transcriber = VideoTranscriber(uploaded_video, "audio.wav", "transcription_output.json")
-#     transcriber.transcribe()  # Start transcription
+if uploaded_video is not None:
+    st.write("Transcribing Video...")
+    # Initialize the transcriber with the uploaded video file
+    transcriber = VideoTranscriber(uploaded_video, "audio.m4a", "transcription_output.json")
+    transcriber.transcribe()  # Start transcription
