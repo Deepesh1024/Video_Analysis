@@ -7,7 +7,7 @@ from langchain_groq import ChatGroq
 class VideoResumeEvaluator:
     def __init__(self, model_name="llama-3.1-70b-versatile"):
         """Initialize the evaluator with the specified LLM model."""
-        self.llm = ChatGroq(model=model_name, api_key="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")
+        self.llm = ChatGroq(model=model_name, api_key="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")
         self.output_parser = StrOutputParser()
         
         # Define the prompt for the LLM
