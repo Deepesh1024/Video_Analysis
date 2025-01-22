@@ -1,222 +1,117 @@
 [
     {
         "start": 0.0,
-        "end": 4.0,
-        "text": " Dear Ma'am, Sir, Thank you so much for having me here."
+        "end": 15.56,
+        "text": " Hello, I am Shishir Roy and I am currently pursuing my MTech in Artificial Intelligence"
     },
     {
-        "start": 4.0,
-        "end": 9.0,
-        "text": " I am Dhruv Gupta and I wish to apply into NTUS, PhD program for biomedical devices."
+        "start": 15.56,
+        "end": 18.12,
+        "text": " at the Institute of Science, Bangalore."
     },
     {
-        "start": 9.0,
-        "end": 12.0,
-        "text": " I will begin with my academic journey."
+        "start": 18.12,
+        "end": 24.72,
+        "text": " I am proficient in CE, C++, Python, SQL, PyTorch and Latex."
     },
     {
-        "start": 12.0,
-        "end": 18.0,
-        "text": " My academic journey has been deeply rooted in exploring the intersection of engineering and health sector."
+        "start": 24.72,
+        "end": 31.96,
+        "text": " During my tenure at ISC, I have had the privilege of delving deep into the mathematical background"
     },
     {
-        "start": 18.0,
-        "end": 24.0,
-        "text": " I am pursuing a Bachelor of Science in Biology in the Indian Institute of Science, my beloved."
+        "start": 31.96,
+        "end": 39.48,
+        "text": " of classical as well as state-of-the-art machine learning and deep learning algorithms."
     },
     {
-        "start": 24.0,
-        "end": 31.0,
-        "text": " And I have consistently sought to blend learnings from biology and physiology with the passion for engineering and robotics."
+        "start": 39.48,
+        "end": 45.68,
+        "text": " In addition to this, I have implemented many of these algorithms which shows my capabilities"
     },
     {
-        "start": 31.0,
-        "end": 41.0,
-        "text": " During my time at IISC, I have taken courses in both these areas of interest and subjects which I have bridged it to."
+        "start": 45.68,
+        "end": 48.480000000000004,
+        "text": " does not stop at the theoretical knowledge."
     },
     {
-        "start": 41.0,
-        "end": 45.0,
-        "text": " So for device making I have taken courses in operating systems and embedded systems."
+        "start": 48.48,
+        "end": 53.919999999999995,
+        "text": " I have done a course in NLP during my second semester at ISC."
     },
     {
-        "start": 45.0,
-        "end": 50.0,
-        "text": " For biology I have taken courses in human physiology, medical neuroscience and neurobiology labs."
+        "start": 53.919999999999995,
+        "end": 60.44,
+        "text": " As a consequence, I have had the chance to read and implement many of the groundbreaking"
     },
     {
-        "start": 50.0,
-        "end": 59.0,
-        "text": " And as combinational courses I have taken product manufacturing via medical devices, diagnostics and devices including neuroimaging."
+        "start": 60.44,
+        "end": 68.0,
+        "text": " research papers which includes Valtuwek, Engram models, recurrent neural networks, sequence"
     },
     {
-        "start": 59.0,
-        "end": 65.0,
-        "text": " My interest in the health sector, we have gradually over a period of 3 years."
+        "start": 68.0,
+        "end": 75.08,
+        "text": " to sequence, encoder-decoder, long short-term memory networks, transformers and many more."
     },
     {
-        "start": 65.0,
-        "end": 73.0,
-        "text": " I in fact first got to know of the term medtech through an Estonian career accelerator which I joined remotely in my first semester at IISC."
+        "start": 75.08,
+        "end": 81.48,
+        "text": " These experiences coupled with my involvement in projects at the Spectrum Lab focusing on"
     },
     {
-        "start": 73.0,
-        "end": 84.0,
-        "text": " I kept the concept in the term medtech in mind when I applied for a medical observation at AIMS Delhi under the mentorship of Karnulal Dr. P.K. Sadhi,"
+        "start": 81.48,
+        "end": 88.72,
+        "text": " image processing showcases my versatility and ability to tackle diverse challenges."
     },
     {
-        "start": 84.0,
-        "end": 88.0,
-        "text": " former Neurologist to President MP J. Abdul Kalam."
+        "start": 88.72,
+        "end": 94.32,
+        "text": " What sets me apart is not just my technical proficiency but also my passion for continuous"
     },
     {
-        "start": 88.0,
-        "end": 96.0,
-        "text": " After acceptance I was encouraged to record high frequency problems happening at the hospital faced by patients."
+        "start": 94.32,
+        "end": 96.52,
+        "text": " learning and collaboration."
     },
     {
-        "start": 96.0,
-        "end": 99.0,
-        "text": " Hospital acquired infections made it to the top of the list."
+        "start": 96.52,
+        "end": 102.96,
+        "text": " I am eager to join Amazon, a hub of innovation where I can contribute my expertise while learning"
     },
     {
-        "start": 100.0,
-        "end": 109.0,
-        "text": " At the time I was also interested in Nanda Parashat and that led me to found my startup Viroak with 3 co-founders and a team of 6."
+        "start": 102.96,
+        "end": 105.19999999999999,
+        "text": " from the best in the field."
     },
     {
-        "start": 109.0,
-        "end": 114.0,
-        "text": " We received a seed funding of 10 lakhs of 1 million Indian rupees."
+        "start": 105.19999999999999,
+        "end": 111.96,
+        "text": " Together, I believe we can push the boundaries of NLP and shape a future where technology"
     },
     {
-        "start": 114.0,
-        "end": 119.0,
-        "text": " We are currently building an MVP, a minimal viable product."
+        "start": 111.96,
+        "end": 115.0,
+        "text": " truly understands and empowers humanity."
     },
     {
-        "start": 119.0,
-        "end": 128.0,
-        "text": " I have submitted patents for 3 devices and are expecting to reduce the cost of our product."
+        "start": 115.0,
+        "end": 117.03999999999999,
+        "text": " Thank you for considering my application."
     },
     {
-        "start": 128.0,
-        "end": 142.0,
-        "text": " After Viroak, me and part of my team decided to apply to the Indian Ministry of Defence for a summer project for helping soldiers with spinal cord injuries"
+        "start": 117.03999999999999,
+        "end": 123.72,
+        "text": " I am excited about the opportunity to bring my skills and enthusiasm to the team at Amazon."
     },
     {
-        "start": 142.0,
-        "end": 145.0,
-        "text": " and rehabilitated them using a robotic gate-trainer."
+        "start": 123.72,
+        "end": 126.52,
+        "text": " Let's create something extraordinary together."
     },
     {
-        "start": 145.0,
-        "end": 148.0,
-        "text": " I designed and was approved by the Indian Chief of Army."
-    },
-    {
-        "start": 150.0,
-        "end": 158.0,
-        "text": " Apart from my work has been facilitated by the entrepreneurship set of IISC and IEEE IISC."
-    },
-    {
-        "start": 158.0,
-        "end": 168.0,
-        "text": " As of February 2024, I am the student chair of CS Society of IEEE and Vice President of the entrepreneurship set of IISC."
-    },
-    {
-        "start": 169.0,
-        "end": 172.0,
-        "text": " Leaning a team is mostly logistics."
-    },
-    {
-        "start": 172.0,
-        "end": 180.0,
-        "text": " I sometimes prefer roles which allow me to focus on my developing and defining my skill set or sometimes a challenge."
-    },
-    {
-        "start": 180.0,
-        "end": 187.0,
-        "text": " I am participating in a competition by IISRO."
-    },
-    {
-        "start": 187.0,
-        "end": 197.0,
-        "text": " It is a minimal viable competition which our team has cleared the first few rounds of and have received funding of 25 lakh rupees"
-    },
-    {
-        "start": 197.0,
-        "end": 201.0,
-        "text": " or 2.5 million in need of rupees to further our project."
-    },
-    {
-        "start": 204.0,
-        "end": 212.0,
-        "text": " Looking ahead, my goal is to continue leveraging my engineering acumen to drive effective and efficient solutions in the health tech sector."
-    },
-    {
-        "start": 212.0,
-        "end": 225.0,
-        "text": " My core strengths are leadership, innovation and a unique skill set of robotics, metric devices and background in biology"
-    },
-    {
-        "start": 225.0,
-        "end": 228.0,
-        "text": " combined with acute market awareness."
-    },
-    {
-        "start": 230.0,
-        "end": 233.0,
-        "text": " I also wish to communicate that my personal mission is innovation of social impact."
-    },
-    {
-        "start": 233.0,
-        "end": 235.0,
-        "text": " I want to help people with what I learned."
-    },
-    {
-        "start": 235.0,
-        "end": 242.0,
-        "text": " Hence, I always seek to understand the application and implementation strategy of any idea first."
-    },
-    {
-        "start": 244.0,
-        "end": 250.0,
-        "text": " Me, an MSCist, founded an NGO, Devi Falhar, to distribute menstrual pads to slums in our city."
-    },
-    {
-        "start": 250.0,
-        "end": 257.0,
-        "text": " We soon figured out that it was not access to pads but rather perception of periods by the men in the house which is the main problem."
-    },
-    {
-        "start": 257.0,
-        "end": 262.0,
-        "text": " And we switched to teaching young boys in the slum about period pain and menstrual health."
-    },
-    {
-        "start": 262.0,
-        "end": 266.0,
-        "text": " We have some of the huge change there after in the feedback that we received from the women in the slums."
-    },
-    {
-        "start": 266.0,
-        "end": 276.0,
-        "text": " So, I would be most happy to work with projects where I get to work with people and understand why they are using my project and what they really, really need."
-    },
-    {
-        "start": 277.0,
-        "end": 281.0,
-        "text": " Thank you so much for considering my application. It's an honor to be here."
-    },
-    {
-        "start": 281.0,
-        "end": 287.0,
-        "text": " I'm eager to bring my perspective and skill set to NTU, Singapore and contribute to the estimated situation."
-    },
-    {
-        "start": 287.0,
-        "end": 295.0,
-        "text": " I look forward to the opportunity to discuss how my background, skills and enthusiasm align with your PhD program. Thank you."
+        "start": 126.52,
+        "end": 127.52,
+        "text": " Have a fantastic day!"
     }
 ]
