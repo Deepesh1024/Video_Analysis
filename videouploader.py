@@ -5,6 +5,7 @@ from newtranscriber import VideoTranscriber
 from ResumeEvaluator import VideoResumeEvaluator
 from groqvision2 import VideoAnalyzer
 from newpdfgen import PDFReportGenerator
+from model_test import predict_tone
 
 # Set a custom theme
 st.set_page_config(
@@ -77,7 +78,7 @@ def main():
         2. The app will automatically:
            - Analyze the video content and presentation
            - Transcribe the speech to text
-           - Evaluate the content using AI
+           - Evaluate the content and tone using AI
            - Generate a comprehensive PDF report
         3. Download your PDF report to review the insights
         """)
@@ -99,31 +100,33 @@ def main():
         # Step 2: Transcription
         transcription_output = process_video(uploaded_video)
         
-        # Step 3: Evaluation
+        # Step 3: Evaluation and Tone Analysis
         with st.container():
-            st.write("### Step 3: Evaluating transcription...")
+            st.write("### Step 3: Evaluating content and tone...")
             evaluator = VideoResumeEvaluator()
-            with st.spinner("Evaluating content... Please wait."):
-                output = evaluator.evaluate_transcription(transcription_output)
             
             try:
-                # Process JSON files
-                with open(r"transcription_output.json", "r") as f:
+                with st.spinner("Analyzing content..."):
+                    eval_results = evaluator.evaluate_transcription(transcription_output)
+                
+                # Load existing JSON data
+                with open("output.json", 'r') as f:
                     data = json.load(f)
                 
-                with open(r"output.json", 'r', encoding='utf-8') as json_file:
-                    data = json.load(json_file)
+                # Update with compatible structure
+                data.update({
+                    'LLM': eval_results['content_evaluation'],  # Maintain string format
+                    'tone_analysis': eval_results['tone_analysis']
+                })
                 
-                data['LLM'] = output
+                # Save updated data
+                with open("output.json", 'w') as f:
+                    json.dump(data, f, indent=4)
                 
-                with open(r"output.json", 'w', encoding='utf-8') as json_file:
-                    json.dump(data, json_file, ensure_ascii=False, indent=4)
-                
-                st.success("Evaluation completed successfully!")
-                
+                st.success("Analysis completed!")
+
             except Exception as e:
-                st.error(f"An error occurred during evaluation: {str(e)}")
-                raise e
+                st.error(f"Error: {str(e)}")
         
         # Step 4: PDF Generation
         with st.container():
@@ -149,7 +152,6 @@ def main():
                     )
     else:
         st.info("👆 Please upload a video file to start the analysis process.")
-
 
 if __name__ == "__main__":
     main()
