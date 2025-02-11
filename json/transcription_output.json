@@ -1,107 +1,67 @@
 [
     {
         "start": 0.0,
-        "end": 7.0,
-        "text": " Hello, my name is Eira Singhal and I'm currently pursuing MPEG in CDS at ISC Bandler and here"
+        "end": 9.0,
+        "text": " Hi, I'm Shahbaman. I'm a 21 year old with passion for research in AI. I'm applying for a research engineer role in Google's AI department."
     },
     {
-        "start": 7.0,
-        "end": 11.0,
-        "text": " I am playing for the role of data scientist at Amazon."
+        "start": 9.0,
+        "end": 15.0,
+        "text": " But what makes me any different from thousands of applicants? Every two minutes of your time and in a long, long sense."
     },
     {
-        "start": 11.0,
-        "end": 18.0,
-        "text": " So to answer the question that why am I a good fit for the role is because I have expertise"
-    },
-    {
-        "start": 18.0,
-        "end": 20.0,
-        "text": " in ML and data science fields."
-    },
-    {
-        "start": 20.0,
+        "start": 15.0,
         "end": 25.0,
-        "text": " I've completed several projects ranging from computer vision to NLP to time series analysis"
+        "text": " I graduated from the Indian Institute of Science with a degree in mathematics, expertise in seed and Python, and also with frameworks like TensorFlow and ROS."
     },
     {
         "start": 25.0,
-        "end": 28.0,
-        "text": " over the course of past one year."
+        "end": 44.0,
+        "text": " I co-founded the innovation cell by University where we worked on some really cool projects. In the name of you, I worked on a project called TTE where we built a system for the detection, prevention, choking, and tracheostomations."
     },
     {
-        "start": 28.0,
-        "end": 33.0,
-        "text": " And also I've covered several courses related to deep learning and computer vision."
+        "start": 45.0,
+        "end": 54.0,
+        "text": " I also worked on a project called BarrowX which was a military project where we used a laser-based remote pressure sensor for the detection of stress fighters."
     },
     {
-        "start": 33.0,
-        "end": 40.0,
-        "text": " And my final year project also relates to computer vision and deep learning field which is AI based"
+        "start": 54.0,
+        "end": 69.0,
+        "text": " I have also been an active part of the AI alignment community for my first semester. I'm very interested in mechanistic interpretability of large language models from AI safety and capability understanding perspective."
     },
     {
-        "start": 40.0,
-        "end": 45.0,
-        "text": " localization and classification of skin diseases with focus on explainable AI."
-    },
-    {
-        "start": 48.0,
-        "end": 50.0,
-        "text": " Strings are concerned."
-    },
-    {
-        "start": 50.0,
-        "end": 56.0,
-        "text": " I have a very strong coding background and since my project deals with deep learning and computer vision"
-    },
-    {
-        "start": 56.0,
-        "end": 62.0,
-        "text": " I'm very well aware of tools like NumPy, Pandas, Scalearn, PyTorch, TensorFlow etc."
-    },
-    {
-        "start": 62.0,
-        "end": 65.0,
-        "text": " to deal with them on a daily basis."
-    },
-    {
-        "start": 65.0,
-        "end": 76.0,
-        "text": " And considering my strengths, I think I can really work with people as a team and work very nicely"
-    },
-    {
-        "start": 76.0,
-        "end": 78.0,
-        "text": " and also I'm a good listener."
+        "start": 69.0,
+        "end": 79.0,
+        "text": " I am an active participant in KTL competitions. I've also got some experience in computer vision due to working on autonomous driver systems."
     },
     {
         "start": 79.0,
-        "end": 88.0,
-        "text": " Talking about my weaknesses, I think I'm very scared of clowns in general and it all started"
+        "end": 84.0,
+        "text": " But enough of the global stuff. You might be wondering what else I'm going to do."
     },
     {
-        "start": 88.0,
-        "end": 95.0,
-        "text": " with a movie called 8-Witch had a very scary clown as a ghost which was named Pennywise."
+        "start": 84.0,
+        "end": 98.0,
+        "text": " Apart from cute cat videos and singing when I'm alone, I'm also interested in swimming, chess, working out, and martial arts."
     },
     {
-        "start": 95.0,
-        "end": 103.0,
-        "text": " Coming to the question of where do I see myself in 5-10 years is I just want to lead a happy"
+        "start": 99.0,
+        "end": 117.0,
+        "text": " So why should I? I have a very relevant technical experience and a very interdisciplinary education background that involves courses in mathematics, physics, biology, and computer science, which allows me to bring innovative solutions to the toughest problems."
     },
     {
-        "start": 103.0,
-        "end": 110.0,
-        "text": " and healthy life so wherever I am at that point of whichever place I'm working at I just want to be happy"
+        "start": 117.0,
+        "end": 124.0,
+        "text": " I'm also a good communicator and I've been involved in very interesting things over the last few years."
     },
     {
-        "start": 110.0,
-        "end": 112.0,
-        "text": " and content with code I have."
+        "start": 124.0,
+        "end": 133.0,
+        "text": " I look forward to using my skills and passion to bring a real and positive impact to the organization and to move into the future of the world."
     },
     {
-        "start": 112.0,
-        "end": 113.0,
-        "text": " Thank you."
+        "start": 135.0,
+        "end": 142.0,
+        "text": " That is all. If you want to get in touch, drop me an email or download my CV. Thank you."
     }
 ]

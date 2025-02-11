@@ -20,7 +20,7 @@ class VideoResumeEvaluator:
 
                  Questions:
                  1. Did the Speaker Speak with confidence ? (Give the One Line Answer)
-                 2. Was the content interesting and as per the guidelines provided? (Yes/No, Don't give any Explanation)
+                 2. Was the content interesting and as per the guidelines provided? (Define in one Line, what you find interesting in the candidate)
                  3. Who are you and what are your skills, expertise, and personality traits? (Rate: Needs Improvement, Poor, Satisfactory, Excellent) (Only Rate it, Don't give any Explanation)
                  4. Why are you the best person to fit this role? (Rate: Excellent, Good, Poor) (Only Rate it, Don't give any Explanation)
                  5. How are you different from others? (Rate: Excellent, Good, Poor) (Only Rate it, Don't give any Explanation)
