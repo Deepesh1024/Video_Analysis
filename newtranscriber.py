@@ -14,7 +14,6 @@ class VideoTranscriber:
 
     def extract_audio(self):
         """Extract audio from video file and save it."""
-        # Create a temporary file in memory from the uploaded video file
         with tempfile.NamedTemporaryFile(delete=False) as temp_video_file:
             temp_video_file.write(self.video_file.read())
             temp_video_file_path = temp_video_file.name
@@ -52,12 +51,3 @@ class VideoTranscriber:
 
         print(f"Transcription results saved to {self.output_json_path}")
         return data
-
-# # Streamlit UI to upload video file
-# uploaded_video = st.file_uploader("Choose a video...", type=["mp4", "mov", "avi", "mkv"])
-
-# if uploaded_video is not None:
-#     st.write("Transcribing Video...")
-#     # Initialize the transcriber with the uploaded video file
-#     transcriber = VideoTranscriber(uploaded_video, "audio.wav", "transcription_output.json")
-#     transcriber.transcribe()  # Start transcription
