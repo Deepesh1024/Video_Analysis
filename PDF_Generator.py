@@ -3,8 +3,10 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, Tabl
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib import colors
 from reportlab.lib.units import inch
+from datetime import datetime
 import json
 import re
+
 
 
 from reportlab.pdfbase import pdfmetrics
@@ -21,7 +23,7 @@ styles['BodyText'].fontName = 'Arial'
 def create_combined_pdf(logo_path, json_path):
     # Load quality analysis data
     with open(json_path, 'r') as fp:
-        quality_data = json.load(fp)
+        tabular_data = json.load(fp)
 
     # Predefined questions for evaluation (static questions)
     llm_questions = [
@@ -42,7 +44,7 @@ def create_combined_pdf(logo_path, json_path):
         return re.sub(r'^\d+\.\s*', '', answer).strip()
 
     # Extract answers from JSON
-    llm_answers = re.split(r'\n(?=\d+\.)', quality_data['LLM'])  # Splitting answers based on numbered format
+    llm_answers = re.split(r'\n(?=\d+\.)', tabular_data['LLM'])  # Splitting answers based on numbered format
 
     # Create PDF document
     doc = SimpleDocTemplate("reports/combined_report.pdf", 
@@ -90,8 +92,11 @@ def create_combined_pdf(logo_path, json_path):
     )
 
     # Add these variables at the top of your function
-    name = "Samanway"  # Replace with your variable
-    current_date = "3rd March 2024"  # Replace with your variable
+    name = tabular_data['User Name'] 
+    now = datetime.now() # Replace with your variable
+    """Use -d instead of #d incase of linux/Mac"""
+    formatted_date = now.strftime("%-d %B %Y")
+    current_date = str(formatted_date)# Replace with your variable
 
 # Modified title paragraph with centered alignment
     title = Paragraph(
@@ -136,12 +141,50 @@ def create_combined_pdf(logo_path, json_path):
 
     # Add dynamic rows from JSON
     for i, question in enumerate(llm_questions[1:], 1):  # Skip first "Questions" entry
-        answer = clean_answer(llm_answers[i]) if i < len(llm_answers) else "N/A"
-        table_data.append([
-            Paragraph(f"{i}.", normal_style),  # Serial Number
-            Paragraph(question, normal_style),  # Question
-            Paragraph(answer, normal_style)  # Answer (ignoring rating)
-        ])
+        if i == 1:
+            # Special handling for the confidence question with sub-items
+            sub_items = [
+                ("Posture", "posture"),
+                ("Smile", "Smile Score"),
+                ("Eye Contact", "Eye Contact"),
+                ("Energetic Start", "Energetic Start")
+            ]
+            # Build the Items text with main question and sub-items
+            items_text = "Did the speaker speak with confidence?<br/>" + "<br/>".join([f"• {item[0]}" for item in sub_items])
+            # Extract scores from JSON
+            print("Items in sub items --> ") 
+            scores = [ ]
+            for items in sub_items:
+                if tabular_data.get(items[1]) == 1:
+                    scores.append("Needs Improvement") 
+                elif tabular_data.get(items[1]) == 2:
+                    scores.append("Poor") 
+                elif tabular_data.get(items[1]) == 3:
+                    scores.append("Satisfactory") 
+                elif tabular_data.get(items[1])== 4:
+                    scores.append("Good") 
+                elif tabular_data.get(items[1]) == 5:
+                    scores.append("Excellent")
+                else:
+                    scores.append("N/A") 
+                
+            
+            
+            scores_text = "<br/>" + "<br/>".join([f"<b>{score}</b>" for score in scores])
+            # Add row to table
+            table_data.append([
+                Paragraph(f"{i}.", normal_style),
+                Paragraph(items_text, normal_style),
+                Paragraph(scores_text, normal_style)
+            ])
+        else:
+            # Handle other questions normally
+            answer = clean_answer(llm_answers[i]) if i < len(llm_answers) else "N/A"
+            table_data.append([
+                Paragraph(f"{i}.", normal_style),
+                Paragraph(question, normal_style),
+                Paragraph(answer, normal_style)
+            ])
 
     # Create Table
     table = Table(table_data, colWidths=[40, 300, 200])
@@ -166,5 +209,4 @@ def create_combined_pdf(logo_path, json_path):
               onLaterPages=add_header_footer)
 
     print("PDF generated successfully with dynamic table!")
-
 

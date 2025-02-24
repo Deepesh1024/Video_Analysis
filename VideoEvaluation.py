@@ -7,7 +7,7 @@ import tensorflow as tf
 from deepface import DeepFace
 import json
 class VideoAnalyzer:
-    def __init__(self, video_file, speedup_factor=10):
+    def __init__(self, video_file, speedup_factor=5):
         self.video_file = video_file
         self.speedup_factor = speedup_factor
         self.model = self.load_model()
@@ -164,5 +164,3 @@ class VideoAnalyzer:
             "Smile Score": int(smile_score),
             "Energetic Start": int((avg_posture + avg_eye + smile_score) / 3)
         }
-
-
