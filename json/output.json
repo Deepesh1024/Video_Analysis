@@ -1,7 +1,6 @@
 {
     "posture": 2,
     "Eye Contact": 4,
-    "Smile Score": 2,
-    "Energetic Start": 3,
-    "LLM": "These are the Answers:\n1. The speaker did not consistently speak with confidence throughout the video resume.\n2. No\n3. Satisfactory\n4. Good\n5. Poor\n6. Poor\n7. The speech lacked a clear structure, with the opening and body being somewhat coherent, but the conclusion was abrupt and lacked a summary of key points.\n8. The quality of research for the topic was limited, and the student's speech did not demonstrate a good depth of knowledge, with no sources of research being cited properly, and the focus being on personal projects rather than industry trends or research.\n9. I was not convinced with the overall speech on the topic, as it lacked coherence, depth, and persuasive power, and based on this video resume, I would not consider them for the job opportunity at Amazon as a data scientist."
+    "Smile Score": 5,
+    "Energetic Start": 3
 }

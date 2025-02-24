@@ -6,6 +6,7 @@ from Overall_Analyser import VideoResumeEvaluator
 from VideoEvaluation import VideoAnalyzer 
 from Qualitative_Analyser import VideoResumeEvaluator2
 from PDF_Generator import create_combined_pdf
+from net import compress_video
 
 st.set_page_config(
     page_title="Video Analysis & Report Generator",
@@ -69,6 +70,12 @@ def main():
         This app extracts insights from your video, transcribes it, evaluates it, and generates a professional PDF report.
     """)
     
+    # User Name Input
+    user_name = st.text_input("Enter your name:", "", key="user_name")
+    if not user_name:
+        st.warning("Name is required before uploading a video.")
+        st.stop()
+    
     # How to use section
     with st.expander("How to use this tool?", expanded=False):
         st.markdown("""
@@ -81,10 +88,11 @@ def main():
         3. Download your PDF report to review the insights
         """)
 
-    uploaded_video = st.file_uploader("📤 **Upload a video file**", type=["mp4", "mov", "avi", "mkv"])
+    uploaded_video = st.file_uploader("Upload a video file", type=["mp4", "mov", "avi", "mkv"])
     
     if uploaded_video is not None:
         st.markdown("---")
+        # uploaded_video = compress_video(uploaded_video)
         
         with st.container():
             st.write("### Step 1: Extracting insights from the video...")
@@ -95,10 +103,8 @@ def main():
                     json.dump(output, json_file, ensure_ascii=False, indent=4)
             st.success("Video analysis completed successfully!")
         
-
         transcription_output = process_video(uploaded_video)
         
-
         with st.container():
             st.write("### Step 3: Evaluating content and tone...")
             evaluator = VideoResumeEvaluator()
@@ -109,11 +115,11 @@ def main():
                     eval_results = evaluator.evaluate_transcription(transcription_output)
                     quality_evaluator.evaluate_transcription(transcription_output)
                 
-               
                 with open("json/output.json", 'r') as f:
                     data = json.load(f)
                 
                 data.update({
+                    'User Name': user_name,
                     'LLM': eval_results
                 })
                 
@@ -132,22 +138,21 @@ def main():
             pdf_path = "reports/combined_report.pdf"
             
             with st.spinner("Creating PDF... Please wait."):
-                create_combined_pdf("logos/logo.png" , 'json/output.json')
+                create_combined_pdf("logos/logo.png", 'json/output.json')
             
             st.success("PDF generated successfully!")
             
-           
             col1, col2, col3 = st.columns([1, 2, 1])
             with col2:
                 with open(f"{pdf_path}", "rb") as pdf_file:
                     st.download_button(
-                        label="📄 Download PDF Report",
+                        label="Download PDF Report",
                         data=pdf_file,
                         file_name="evaluation_report.pdf",
                         mime="application/pdf",
                     )
     else:
-        st.info("👆 Please upload a video file to start the analysis process.")
+        st.info("Please enter your name and upload a video file to start the analysis process.")
 
 if __name__ == "__main__":
     main()

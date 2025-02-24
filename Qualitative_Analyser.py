@@ -12,7 +12,7 @@ class VideoResumeEvaluator2:
         """
         
         self.llm = ChatGroq(
-            model=model_name
+            model=model_name, api_key = "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"
         )
         self.output_parser = JsonOutputParser()
         self.prompt_template = ChatPromptTemplate.from_messages([

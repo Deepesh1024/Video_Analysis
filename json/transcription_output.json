@@ -1,107 +1,177 @@
 [
     {
         "start": 0.0,
-        "end": 7.0,
-        "text": " Hello, my name is Eira Singhal and I'm currently pursuing MPEG in CDS at ISC Bandler and here"
+        "end": 10.1,
+        "text": " Hello everyone, I am Mandar Valerao."
     },
     {
-        "start": 7.0,
-        "end": 11.0,
-        "text": " I am playing for the role of data scientist at Amazon."
+        "start": 10.1,
+        "end": 15.860000000000001,
+        "text": " I am currently an M.Tech student at IISC Bangalore in Computer Science and Automation."
     },
     {
-        "start": 11.0,
-        "end": 18.0,
-        "text": " So to answer the question that why am I a good fit for the role is because I have expertise"
+        "start": 15.860000000000001,
+        "end": 18.62,
+        "text": " I am also a cloud computing enthusiast."
     },
     {
-        "start": 18.0,
-        "end": 20.0,
-        "text": " in ML and data science fields."
+        "start": 18.62,
+        "end": 24.3,
+        "text": " My journey in cloud technology began with a challenge at Amazon Web Services to manage"
     },
     {
-        "start": 20.0,
-        "end": 25.0,
-        "text": " I've completed several projects ranging from computer vision to NLP to time series analysis"
+        "start": 24.3,
+        "end": 32.1,
+        "text": " a project with a strict budget which was $30. I am proud to say that I completed it with"
     },
     {
-        "start": 25.0,
-        "end": 28.0,
-        "text": " over the course of past one year."
+        "start": 32.1,
+        "end": 37.56,
+        "text": " $22 demonstrating my skill in efficient cloud resource management."
     },
     {
-        "start": 28.0,
-        "end": 33.0,
-        "text": " And also I've covered several courses related to deep learning and computer vision."
+        "start": 37.56,
+        "end": 43.980000000000004,
+        "text": " I understand the importance of not just running systems but running them cost effectively which"
     },
     {
-        "start": 33.0,
-        "end": 40.0,
-        "text": " And my final year project also relates to computer vision and deep learning field which is AI based"
+        "start": 43.980000000000004,
+        "end": 48.06,
+        "text": " is a crucial skill for any role at Google."
     },
     {
-        "start": 40.0,
-        "end": 45.0,
-        "text": " localization and classification of skin diseases with focus on explainable AI."
+        "start": 48.06,
+        "end": 53.019999999999996,
+        "text": " So this experience is a way in which I stand out as a cloud engineer."
     },
     {
-        "start": 48.0,
-        "end": 50.0,
-        "text": " Strings are concerned."
+        "start": 53.02,
+        "end": 57.260000000000005,
+        "text": " My academic background is also the time where I built the foundation."
     },
     {
-        "start": 50.0,
-        "end": 56.0,
-        "text": " I have a very strong coding background and since my project deals with deep learning and computer vision"
+        "start": 57.260000000000005,
+        "end": 62.900000000000006,
+        "text": " I studied computer architecture which is very critical for understanding infrastructure"
     },
     {
-        "start": 56.0,
-        "end": 62.0,
-        "text": " I'm very well aware of tools like NumPy, Pandas, Scalearn, PyTorch, TensorFlow etc."
+        "start": 62.900000000000006,
+        "end": 64.4,
+        "text": " of cloud services."
     },
     {
-        "start": 62.0,
-        "end": 65.0,
-        "text": " to deal with them on a daily basis."
+        "start": 64.4,
+        "end": 68.94,
+        "text": " I have also tackled machine learning systems learning to handle the kind of large scale"
     },
     {
-        "start": 65.0,
-        "end": 76.0,
-        "text": " And considering my strengths, I think I can really work with people as a team and work very nicely"
+        "start": 68.94,
+        "end": 73.82000000000001,
+        "text": " data processing applications that are at the heart of cloud computing."
     },
     {
-        "start": 76.0,
-        "end": 78.0,
-        "text": " and also I'm a good listener."
+        "start": 73.82000000000001,
+        "end": 77.74000000000001,
+        "text": " I have also completed my internship at Western Union."
     },
     {
-        "start": 79.0,
-        "end": 88.0,
-        "text": " Talking about my weaknesses, I think I'm very scared of clowns in general and it all started"
+        "start": 77.74,
+        "end": 82.69999999999999,
+        "text": " At Western Union, I worked on a tool that improved financial transactions through better"
     },
     {
-        "start": 88.0,
-        "end": 95.0,
-        "text": " with a movie called 8-Witch had a very scary clown as a ghost which was named Pennywise."
+        "start": 82.69999999999999,
+        "end": 84.19999999999999,
+        "text": " user experience."
     },
     {
-        "start": 95.0,
-        "end": 103.0,
-        "text": " Coming to the question of where do I see myself in 5-10 years is I just want to lead a happy"
+        "start": 84.19999999999999,
+        "end": 92.08,
+        "text": " It was a practical application of cloud analytics and we boosted the conversion rates significantly."
     },
     {
-        "start": 103.0,
-        "end": 110.0,
-        "text": " and healthy life so wherever I am at that point of whichever place I'm working at I just want to be happy"
+        "start": 92.08,
+        "end": 99.34,
+        "text": " In another project, I developed a recommendation system handling thousands of data points."
     },
     {
-        "start": 110.0,
-        "end": 112.0,
-        "text": " and content with code I have."
+        "start": 99.34,
+        "end": 104.14,
+        "text": " It's a kind of big data challenge that is common in cloud services."
     },
     {
-        "start": 112.0,
-        "end": 113.0,
-        "text": " Thank you."
+        "start": 104.14,
+        "end": 109.94,
+        "text": " My technical skills are in Python and C++ and I have familiarity with tools like Jupyter"
+    },
+    {
+        "start": 109.94,
+        "end": 112.26,
+        "text": " Notebook and Google Colour."
+    },
+    {
+        "start": 112.26,
+        "end": 116.46000000000001,
+        "text": " It means that I am well prepared for the technical challenges at Google."
+    },
+    {
+        "start": 116.46000000000001,
+        "end": 120.78,
+        "text": " My achievements in the coding competitions demonstrate my problem solving skills and"
+    },
+    {
+        "start": 120.78,
+        "end": 122.02,
+        "text": " abilities."
+    },
+    {
+        "start": 122.02,
+        "end": 127.94,
+        "text": " What sets me apart is not just my technical skills but my ability to learn quickly and"
+    },
+    {
+        "start": 127.94,
+        "end": 132.62,
+        "text": " adapt qualities that I know which are essential at Google."
+    },
+    {
+        "start": 132.62,
+        "end": 139.38,
+        "text": " I am ready to bring my cloud computing skills to the table not just to do a job but to innovate"
+    },
+    {
+        "start": 139.38,
+        "end": 143.78,
+        "text": " and help Google lead the way in cloud services."
+    },
+    {
+        "start": 143.78,
+        "end": 149.46,
+        "text": " In conclusion, my technical skills, my proven track record in cloud management and quick"
+    },
+    {
+        "start": 149.46,
+        "end": 155.06,
+        "text": " adaptability are the exact rates that Google looks for a cloud engineer."
+    },
+    {
+        "start": 155.06,
+        "end": 160.98000000000002,
+        "text": " I am not just ready to join the Google Cloud team, I am also ready to innovate, drive efficiency"
+    },
+    {
+        "start": 160.98,
+        "end": 165.34,
+        "text": " and contribute to the groundbreaking work that defines Google."
+    },
+    {
+        "start": 165.34,
+        "end": 171.26,
+        "text": " Thank you for the opportunity to share my vision and excitement to be a part of shaping"
+    },
+    {
+        "start": 171.26,
+        "end": 172.94,
+        "text": " the cloud's future at Google."
     }
 ]
