@@ -4,9 +4,9 @@ import json
 from newtranscriber import VideoTranscriber
 from Overall_Analyser import VideoResumeEvaluator
 from VideoEvaluation import VideoAnalyzer 
-from Qualitative_Analyser import VideoResumeEvaluator2
+from Qualitatitive_analyser import VideoResumeEvaluator2  # Ensure filename matches exactly
 from PDF_Generator import create_combined_pdf
-from net import compress_video
+from audio_analysis import analyze_audio_metrics  # New import for audio analysis
 
 st.set_page_config(
     page_title="Video Analysis & Report Generator",
@@ -92,8 +92,8 @@ def main():
     
     if uploaded_video is not None:
         st.markdown("---")
-        # uploaded_video = compress_video(uploaded_video)
         
+        # Step 1: Video Analysis
         with st.container():
             st.write("### Step 1: Extracting insights from the video...")
             with st.spinner("Analyzing video... Please wait."):
@@ -103,8 +103,29 @@ def main():
                     json.dump(output, json_file, ensure_ascii=False, indent=4)
             st.success("Video analysis completed successfully!")
         
+        # Step 2: Transcription
         transcription_output = process_video(uploaded_video)
         
+        # Step 2.5: Audio Analysis - Volume and Pace
+        with st.container():
+            st.write("### Step 2.5: Audio Analysis - Volume and Pace")
+            audio_metrics = analyze_audio_metrics("audiofile.wav", "json/transcription_output.json")
+            volume_dbfs = audio_metrics["average_volume"]
+            # Convert the dBFS value to an approximate percentage (assuming -60 dBFS ~ silence and 0 dBFS ~ max)
+            volume_percentage = ((volume_dbfs + 60) / 60) * 100
+            st.write(f"**Average Volume:** {volume_dbfs:.2f} dBFS (approx {volume_percentage:.0f}% of maximum loudness)")
+            st.write(f"**Speaking Pace:** {audio_metrics['words_per_minute']:.2f} words per minute")
+
+            # Save volume & pace to output.json for PDF
+            with open("json/output.json", "r") as f:
+                data = json.load(f)
+            data["average_volume"] = volume_dbfs
+            data["speaking_pace"] = audio_metrics["words_per_minute"]
+            data["average_volume_percentage"] = volume_percentage
+            with open("json/output.json", "w") as f:
+                json.dump(data, f, indent=4)
+        
+        # Step 3: Content & Tone Evaluation
         with st.container():
             st.write("### Step 3: Evaluating content and tone...")
             evaluator = VideoResumeEvaluator()

@@ -6,15 +6,15 @@ import tensorflow_hub as hub
 import tensorflow as tf
 from deepface import DeepFace
 import json
+
 class VideoAnalyzer:
-    def __init__(self, video_file, speedup_factor=5):
+    def __init__(self, video_file, speedup_factor=10):
         self.video_file = video_file
         self.speedup_factor = speedup_factor
         self.model = self.load_model()
         self.face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
         self.smile_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_smile.xml')
         
-
         self.smile_count = 0
         self.previous_smile = False
         self.cooldown_frames = 0
@@ -50,22 +50,20 @@ class VideoAnalyzer:
 
     def calculate_eye_contact_score(self, keypoints):
         # Assuming that keypoints[0][0][1] and keypoints[0][0][2] represent the left and right eyes
-        left_eye_x, left_eye_y, left_eye_conf = keypoints[0][0][1]  # Left eye keypoint (index 1)
-        right_eye_x, right_eye_y, right_eye_conf = keypoints[0][0][2]  # Right eye keypoint (index 2)
+        left_eye_x, left_eye_y, left_eye_conf = keypoints[0][0][1]
+        right_eye_x, right_eye_y, right_eye_conf = keypoints[0][0][2]
         
         # Assuming that keypoints[0][0][0] represents the head center (the nose)
-        head_x, head_y, head_conf = keypoints[0][0][0]  # Nose or head center keypoint (index 0)
+        head_x, head_y, head_conf = keypoints[0][0][0]
 
-        if left_eye_conf > 0.5 and right_eye_conf > 0.5:  # If both eyes are detected with high confidence
+        if left_eye_conf > 0.5 and right_eye_conf > 0.5:
             left_diff = abs(left_eye_x - head_x)
             right_diff = abs(right_eye_x - head_x)
-            
-            eye_contact_score = max(5 - (left_diff + right_diff), 0)  # Normalize score between 0 and 10
+            eye_contact_score = max(5 - (left_diff + right_diff), 0)
         else:
             eye_contact_score = 0
 
         return eye_contact_score
-
 
     def detect_smiles(self, frame):
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -85,12 +83,10 @@ class VideoAnalyzer:
                     minSize=(25, 25))
                 current_smile = len(smiles) > 0
 
-        # Handle cooldown
         if self.current_cooldown > 0:
             self.current_cooldown -= 1
             current_smile = False
 
-        # Count smile transitions
         if not self.previous_smile and current_smile:
             self.smile_count += 1
             self.current_cooldown = self.cooldown_frames
@@ -105,11 +101,10 @@ class VideoAnalyzer:
 
         cap = cv2.VideoCapture(temp_video_path)
         fps = cap.get(cv2.CAP_PROP_FPS)
-        self.cooldown_frames = int(1.5 * fps / self.speedup_factor)  # Adjusted cooldown
+        self.cooldown_frames = int(1.5 * fps / self.speedup_factor)
         total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
         results = []
         
-
         energetic_start_frames = int(fps * 15)  
         positive_emotion_count = 0
         processed_start_frames = 0
@@ -119,11 +114,9 @@ class VideoAnalyzer:
             if not ret:
                 break
 
-
             if frame_idx % self.speedup_factor != 0:
                 continue
 
-    
             self.detect_smiles(frame)
 
             if frame_idx < energetic_start_frames:
@@ -150,7 +143,7 @@ class VideoAnalyzer:
         avg_eye = sum(eye_contact_scores)/len(eye_contact_scores) if eye_contact_scores else 0
         
         video_duration = total_frames / fps
-        smile_rate = self.smile_count / (video_duration / 60)  
+        smile_rate = self.smile_count / (video_duration / 60)
         smile_score = min(5, (smile_rate / 5) * 5)
 
         energetic_score = 0
