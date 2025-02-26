@@ -3,7 +3,6 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_community.llms import Ollama
 from langchain_groq import ChatGroq
 
-
 class VideoResumeEvaluator:
     def __init__(self, model_name="llama-3.3-70b-versatile"):
         """Initialize the evaluator with the specified LLM model."""
@@ -33,7 +32,6 @@ class VideoResumeEvaluator:
                 )
             ]
         )
-        
         
         self.chain = self.prompt_template | self.llm | self.output_parser
 
