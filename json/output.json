@@ -1,11 +1,9 @@
 {
-    "posture": 4,
-    "Eye Contact": 4,
-    "Smile Score": 5,
-    "Energetic Start": 4,
-    "average_volume": -37.88547306369365,
-    "speaking_pace": 160.04905718227803,
-    "average_volume_percentage": 36.857544893843915,
-    "User Name": "Samanway",
-    "LLM": "These are the Answers:\n1. The speaker generally spoke with confidence throughout the video resume.\n2. Yes\n3. Satisfactory\n4. Good\n5. Good\n6. Good\n7. The speech had a somewhat informal structure, but it could be broadly divided into an opening, body, and conclusion.\n8. The quality of research for the topic appears to be good, with the student demonstrating a decent depth of knowledge in AI and related fields, although they did not cite specific sources of research.\n9. I was moderately convinced by the overall speech, and while it was somewhat persuasive, I would likely consider them for an interview, but would need to see more depth and specifics about their skills and experiences to make a final decision."
+    "posture": 3,
+    "Eye Contact": 3,
+    "Smile Score": 0,
+    "Energetic Start": 2,
+    "average_volume": -24.51276191684193,
+    "speaking_pace": 150.35738597685497,
+    "average_volume_percentage": 59.14539680526345
 }
