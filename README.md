@@ -10,7 +10,7 @@ Follow the Guide Along in order to Run the Software
 This guide provides steps to set up a Python environment using `venv` and install dependencies.
 
 ## Prerequisites
-- Ensure Python is installed (recommended version: 3.8 or later).
+- Ensure Python is installed (recommended version: 3.8 and below 3.13).
 - Verify Python installation:
   ```sh
   python --version
