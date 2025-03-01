@@ -1,0 +1,181 @@
+/* ============================================================
+   CSS Variables for Consistent Styling
+============================================================ */
+:root {
+  --primary-color: #4a90e2;       /* A vibrant blue */
+  --secondary-color: #50e3c2;     /* A refreshing teal */
+  --accent-color: #f5a623;        /* A warm accent color */
+  --background-color: #121212;    /* Dark background */
+  --text-color: #e0e0e0;          /* Light text for readability */
+  --btn-radius: 0.5rem;
+  --transition-speed: 0.3s;
+  --font-family: 'Montserrat', sans-serif;
+}
+
+/* ============================================================
+   Global Resets and Base Styles
+============================================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #121212, #1a1a1a);
+  font-family: var(--font-family);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* ============================================================
+   Typography
+============================================================ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* ============================================================
+   Links
+============================================================ */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color var(--transition-speed) ease;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* ============================================================
+   Buttons
+============================================================ */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: var(--btn-radius);
+  cursor: pointer;
+  transition: background-color var(--transition-speed) ease,
+              transform var(--transition-speed) ease;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.02);
+}
+
+/* ============================================================
+   Card Component
+============================================================ */
+.card {
+  background-color: #1e1e1e;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Card Header */
+.card-header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/* Card List Items */
+.list-group-item {
+  border: none;
+  border-bottom: 1px solid #333;
+  padding: 0.75rem 1.25rem;
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+/* ============================================================
+   Navbar Styling
+============================================================ */
+.navbar {
+  background-color: #1a1a1a;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* ============================================================
+   Hero Section (if used)
+============================================================ */
+.hero {
+  background: url('../img/hero-bg.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+}
+
+/* ============================================================
+   Video & Media Styling
+============================================================ */
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+/* ============================================================
+   Utility Classes
+============================================================ */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 1rem; }
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 1rem; }
+
+/* ============================================================
+   Animations & Transitions
+============================================================ */
+.fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
