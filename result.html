@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container py-5">
+  <!-- Header Section -->
+  <div class="text-center mb-5">
+    <h1 class="display-4 fw-bold animate__animated animate__fadeInDown">Analysis Completed!</h1>
+    <p class="lead animate__animated animate__fadeInUp">
+      Thank you, <strong>{{ user_name }}</strong>! Your video has been analyzed and a detailed report is ready.
+    </p>
+  </div>
+
+  <!-- Main Content: Video & Report -->
+  <div class="row">
+    <!-- Video Section -->
+    <div class="col-md-6 mb-4 animate__animated animate__fadeInLeft">
+      <div class="card shadow border-0">
+        <div class="card-body">
+          <h5 class="card-title">Your Uploaded Video</h5>
+          <video width="100%" controls class="rounded">
+            <source src="{{ url_for('uploaded_file', filename=video_filename) }}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+    <!-- PDF Report Section -->
+    <div class="col-md-6 mb-4 animate__animated animate__fadeInRight d-flex align-items-center justify-content-center">
+      <div class="text-center">
+        <p class="fs-4">Ready to review your comprehensive report?</p>
+        <a href="{{ pdf_url }}" class="btn btn-success btn-lg shadow">
+          <i class="bi bi-download me-2"></i> Download PDF Report
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
